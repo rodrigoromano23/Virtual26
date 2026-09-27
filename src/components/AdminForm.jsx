@@ -6,7 +6,7 @@ import { Users, Plus, Trash2, Link as LinkIcon, Calendar, FileText, CheckCircle2
 import { FaYoutube } from 'react-icons/fa';
 
 // Instancia de socket conectada dinámicamente según la baseURL de tu instancia axios (o fallback a localhost)
-const socketURL = api.defaults.baseURL ? api.defaults.baseURL.replace('/api', '') : 'http://localhost:5000';
+const socketURL = api.defaults.baseURL ? api.defaults.baseURL.replace('/api', '') : 'https://virtual2026.onrender.com';
 const socket = io(socketURL, { autoConnect: false });
 
 export default function AdminForm({ onClaseCreada, isAdmin: isAdminProp = true, onLogout }) {
