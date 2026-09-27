@@ -18,7 +18,7 @@ import {
 } from 'lucide-react';
 
 // Instancia de Socket.io conectada al servidor backend
-const socket = io('http://localhost:5000');
+const socket = io('https://virtual2026.onrender.com');
 
 export default function Home({ onIrAdmin }) {
   const [clases, setClases] = useState([]);
